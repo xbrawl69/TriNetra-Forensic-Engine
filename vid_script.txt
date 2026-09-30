@@ -1,0 +1,46 @@
+================================================================================
+TRINETRA FORENSICS // SIH26150 - PRODUCTION VISUALIZATION SCRIPT
+Format: Spoken Narration & Telemetry Walkthrough
+Duration: 3 Minutes (~480 words)
+Standard: Section 65B Indian Evidence Act & NIST SP 800-86 Compliant
+================================================================================
+
+[0:00 - 0:45] INTRODUCTION & PROBLEM STATEMENT
+--------------------------------------------------------------------------------
+[SPEAKER CUE: Authoritative, steady, measured tone. Camera on Landing Page / Telemetry Bar.]
+
+"Welcome to the live visualization of TriNetra Forensics. We are the engineering team from Rashtriya Raksha University, presenting our solution for SIH problem statement 26150.
+
+In contemporary digital forensics, surveillance evidence acquisition is severely broken. Major surveillance hardware manufacturers—including Dahua, HIKVISION, and CP Plus—store footage across proprietary, non-standard filesystems such as DHFS and HikFS. When investigating officers extract raw disk dumps or proprietary video streams, proprietary containers cause severe delays, frame dropped indices, and critical timestamp desynchronization. Worst of all, conventional recovery methods risk contaminating the digital artifact, directly endangering legal admissibility under Section 65B of the Indian Evidence Act. TriNetra Forensics was engineered to solve this crisis through automated ingestion, immutable bitstream attestation, and vendor-agnostic normalization."
+
+
+[0:45 - 1:15] ARCHITECTURAL AUTHORITY
+--------------------------------------------------------------------------------
+[SPEAKER CUE: Confident, technical cadence. Visual transition to Platform Architecture / Command Overview.]
+
+"To deliver court-admissible rigor at high throughput, TriNetra Forensics is built on an enterprise asynchronous architecture. The frontend and API gateway utilize Next.js 14 App Router, styled with a high-contrast Neo-Brutalist design system tailored specifically for data-dense, fatigue-free forensic operations. Heavy media carving and normalization tasks are completely isolated from the UI thread, executed by distributed FFmpeg container workers orchestrated via Redis and BullMQ. Every raw block, audit log entry, and ML feature vector is anchored in an immutable PostgreSQL database to guarantee a zero-tamper chain of custody."
+
+
+[1:15 - 2:00] LIVE VISUALIZATION - ATTACHMENT & INGESTION
+--------------------------------------------------------------------------------
+[SPEAKER CUE: Active demonstration tone. Visual showing file drop onto Ingestion Zone and hash generation.]
+
+"Let us transition to the live system walkthrough in the Evidence Vault. Here, an investigator ingests a raw proprietary surveillance stream. Notice the drag-and-drop ingestion interface: as the raw file is submitted, our forensic engine immediately intercepts the stream before any parsing or transcoding occurs.
+
+At this exact millisecond of ingestion, hardware-accelerated algorithms calculate both the MD5 and SHA-256 cryptographic bitstream hashes. This establishes an inviolable cryptographic baseline proving that the ingested bytes are pure and untouched. The file record is committed to PostgreSQL, and the parsing job is dispatched to our background BullMQ queue. The investigator's interface remains completely fluid and reactive, free from UI freezing during heavy processing."
+
+
+[2:00 - 2:45] LIVE VISUALIZATION - RESULTS & ML ANALYTICS
+--------------------------------------------------------------------------------
+[SPEAKER CUE: Engaging, analytical tone. Visual on Detailed Evidence View, video playback, timeline scrubbing.]
+
+"Now, examining the Detailed Evidence View: our workers have parsed the proprietary container into a standard, normalized ISO-compliant H.264 stream. As seen in the viewport, the video plays back seamlessly at full framerate, actively tracking subjects including persons, bicycles, and vehicles across the surveillance grid.
+
+Beneath the video player lies our Forensic Event Timeline. Our integrated machine learning core evaluates frame feature vectors in real time, automatically correlating motion ingress, object detection, and facial vectors with millisecond precision. Clicking any timestamp jumps the video player directly to that occurrence and renders the analytical bounding HUD. Finally, with a single click on 'Generate Forensic Report', TriNetra instantly compiles the cryptographic hashes, hardware metadata, and audit timeline into a court-ready certificate of custody formatted for Section 65B judicial submission."
+
+
+[2:45 - 3:00] CONCLUSION
+--------------------------------------------------------------------------------
+[SPEAKER CUE: Decisive, closing summary. Visual on Final Report Preview / Portal Return.]
+
+"TriNetra Forensics transforms proprietary, fragmented surveillance chaos into vendor-agnostic standardization, cutting critical investigation lead times from days to seconds while preserving uncompromised evidentiary integrity. Thank you for your time, and welcome to the next generation of digital forensics."

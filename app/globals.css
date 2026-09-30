@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fafafa;
+  --foreground: #09090b;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Neo-Brutalist Button Utility */
+.btn-brutal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.625rem 1.25rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: 2px solid #09090b;
+  box-shadow: 4px 4px 0px 0px #09090b;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn-brutal:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px 0px #09090b;
+}
+
+.btn-brutal:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #09090b;
+}
+
+.btn-brutal-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.625rem 1.25rem;
+  background-color: #ffffff;
+  color: #09090b;
+  border: 2px solid #09090b;
+  box-shadow: 4px 4px 0px 0px #09090b;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn-brutal-secondary:hover {
+  background-color: #f4f4f5;
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px 0px #09090b;
+}
+
+.btn-brutal-secondary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #09090b;
+}
+
+/* Neo-Brutalist Card Utility */
+.card-brutal {
+  background-color: #ffffff;
+  border: 2px solid #09090b;
+  box-shadow: 4px 4px 0px 0px #09090b;
+}
